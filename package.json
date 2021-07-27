@@ -1,8 +1,8 @@
 {
-  "name": "test1",
+  "name": "test-rollup-react-1",
   "version": "1.0.0",
   "description": "",
-  "main": "bundle.js",
+  "main": "dist/js/esm/main.js",
   "scripts": {
     "build": "rollup -c"
   },

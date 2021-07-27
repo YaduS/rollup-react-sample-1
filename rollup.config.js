@@ -10,8 +10,13 @@ export default defineConfig({
   input: 'src/main.js',
   output: [
     {
-      dir: 'dist/js',
+      dir: 'dist/js/cjs',
       format: 'cjs',
+      // plugins: [terser()],   // for minification
+    },
+    {
+      dir: 'dist/js/esm',
+      format: 'esm',
       // plugins: [terser()],   // for minification
     },
   ],
