@@ -1,4 +1,3 @@
-import bar from './bar.jsx';
 import foo from './foo';
 import jsonObj from './foo.json';
 import './main.scss';
@@ -8,4 +7,4 @@ export default function () {
   console.log('jsonObj: ', jsonObj);
 }
 
-ReactDOM.render(bar, document.getElementById('id'));
+// ReactDOM.render(bar, document.getElementById('id'));
