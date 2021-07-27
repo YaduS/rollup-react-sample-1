@@ -2,7 +2,7 @@
   "name": "test-rollup-react-1",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/js/esm/main.js",
+  "main": "dist/esm/main.js",
   "scripts": {
     "build": "rollup -c"
   },
