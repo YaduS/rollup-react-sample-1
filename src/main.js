@@ -1,4 +1,4 @@
-import bar from './bar.js';
+import bar from './bar.jsx';
 import jsonObj from './foo.json';
 import './main.scss';
 
