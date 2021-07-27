@@ -1,0 +1,8 @@
+body {
+  all: revert;
+  background-color: green;
+  p {
+    all: revert;
+    background-color: yellow;
+  }
+}
