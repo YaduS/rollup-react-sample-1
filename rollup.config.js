@@ -27,6 +27,7 @@ export default defineConfig({
     }),
     babel({
       presets: ['@babel/preset-react'],
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
     }),
     del({
       targets: 'dist/*',
