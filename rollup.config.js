@@ -1,7 +1,7 @@
 import babel from '@rollup/plugin-babel';
 import json from '@rollup/plugin-json';
 import { defineConfig } from 'rollup';
-import del from 'rollup-plugin-delete';
+import deletePlugin from 'rollup-plugin-delete';
 // import scss from 'rollup-plugin-scss';
 import postcss from 'rollup-plugin-postcss';
 // import { terser } from 'rollup-plugin-terser';
@@ -35,7 +35,7 @@ export default defineConfig({
       presets: ['@babel/preset-react'],
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
     }),
-    del({
+    deletePlugin({
       targets: 'dist/*',
     }),
   ],
