@@ -1,6 +1,7 @@
 import babel from '@rollup/plugin-babel';
 import json from '@rollup/plugin-json';
 import { defineConfig } from 'rollup';
+import del from 'rollup-plugin-delete';
 import scss from 'rollup-plugin-scss';
 // import { terser } from 'rollup-plugin-terser';
 
@@ -21,6 +22,9 @@ export default defineConfig({
     }),
     babel({
       presets: ['@babel/preset-react'],
+    }),
+    del({
+      targets: 'dist/*',
     }),
   ],
 });
