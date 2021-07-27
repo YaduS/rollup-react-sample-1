@@ -1,3 +1,4 @@
+import babel from '@rollup/plugin-babel';
 import json from '@rollup/plugin-json';
 import { defineConfig } from 'rollup';
 import scss from 'rollup-plugin-scss';
@@ -17,6 +18,9 @@ export default defineConfig({
     json(),
     scss({
       output: 'dist/css/styles.css',
+    }),
+    babel({
+      presets: ['@babel/preset-react'],
     }),
   ],
 });
